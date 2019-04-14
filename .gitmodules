@@ -1,0 +1,3 @@
+[submodule "one-ci-jenkins"]
+	path = one-ci-jenkins
+	url = https://github.com/shikunwei/one-ci-jenkins.git
