@@ -9,6 +9,7 @@ You can reffer to https://github.com/shikunwei/centos-setup.git to setup Docker 
 
 ## How to run:
 ```
+git clone https://github.com/shikunwei/one-ci.git && cd one-ci
 git submodule init && git submodule update && docker-compose up
 ```
 
