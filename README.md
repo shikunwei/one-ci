@@ -7,10 +7,18 @@ Docker & docker compose
 
 You can reffer to https://github.com/shikunwei/centos-setup.git to setup Docker & docker compose
 
+## disable firewall
+systemctl stop firewalld.service && systemctl disable firewalld.service
+
+## set vm.max_map_count
+echo 'vm.max_map_count=262144' >> /etc/sysctl.conf
+
+sysctl -w vm.max_map_count=262144
+
 ## How to run:
 ```
 git clone https://github.com/shikunwei/one-ci.git && cd one-ci
-git submodule init && git submodule update && docker-compose up
+git submodule init && git submodule update && docker-compose up -d
 ```
 
 ## Access Tools after service running up:
